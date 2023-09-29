@@ -1,0 +1,64 @@
+
+================================================
+TITRE DU JEU DE DONNEES
+================================================
+
+Liste des prénoms des enfants nés à Rennes de 2007 à 2015
+
+================================================
+DESCRIPTION
+================================================
+
+Liste des prénoms des enfants nés à Rennes de 2007 à 2015, au format CSV, avec le nombre d’occurrences de chaque prénom, classés par année et par sexe.
+De 2007 à 2011 inclus les prénoms ayant moins de 6 occurences n'apparaissent pas. Depuis 2012, l'intégralité des prénoms apparaissent.
+Le fichier NbTotal donne le nombre total d'enfants nés à Rennes, par année et par sexe.
+
+================================================
+INFORMATIONS TECHNIQUES
+================================================
+
+Date de dernière mise à jour    : 18/03/2016 : Ajout du fichier 2014 et mise à jour du fichier NbTotal qui donne le nombre total d'enfants nés à Rennes, par année et par sexe.
+
+================================================
+ATTRIBUTS
+================================================
+
+ANNAISS 		     : Année de naissance de l'enfant
+MNAISS			     : Mois de naissance de l'enfant
+CODCOM			     : Code Postal de la commune de naissance de l'enfant
+LBCOM			     : Nom de la commune de naissance de l'enfant
+NRB  	    		     : Total des enfants nés sous le même prénom
+PRN      		     : Prénom de l'enfant
+SEXE           		     : Sexe de l'enfant
+NB_TOTAL        	     : Nombre total d'enfants nés
+
+================================================
+COUVERTURE TEMPORELLE
+================================================
+
+2007 à 2015
+
+================================================
+FREQUENCE DE MISE A JOUR
+================================================
+
+Annuelle 
+
+
+================================================
+CONTACT
+================================================
+
+Pour toute demande d'information ou remarque, 
+merci de passer par le forum du site http://www.data.rennes-metropole.fr/
+
+================================================
+INFORMATIONS LEGALES
+================================================
+
+Propriétaire : Service DPAP Ville de Rennes
+
+Gestionnaire : Service ICOM Rennes Métropole
+
+Licence      : Open Database Licence (ODbL)
+

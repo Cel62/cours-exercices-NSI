@@ -1,0 +1,13 @@
+p {
+	color:red;
+}
+
+h1 {
+	text-align: center;
+	backgroud-color: red;
+}
+
+#special {
+	font-style: italic;
+	color: green;
+}

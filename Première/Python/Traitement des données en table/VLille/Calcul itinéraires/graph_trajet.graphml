@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml>
+	<graph id="Graph" uidGraph="7" uidEdge="10006">
+		<nodes>
+			<node positionX="350" positionY="117" id="0" mainText="A" upText="" ></node>
+			<node positionX="247" positionY="117" id="1" mainText="B" upText="" ></node>
+			<node positionX="68" positionY="46" id="2" mainText="C" upText="" ></node>
+			<node positionX="101" positionY="220" id="3" mainText="D" upText="" ></node>
+			<node positionX="-21" positionY="137" id="4" mainText="E" upText="" ></node>
+		</nodes>
+		<edges>
+			<edge vertex1="1" vertex2="2" isDirect="false" weight="1.5" useWeight="true" id="10001" text="" arrayStyleStart="" arrayStyleFinish="" model_width="4" model_type="0" model_curvedValue="0.1" ></edge>
+			<edge vertex1="2" vertex2="4" isDirect="false" weight="0.6" useWeight="true" id="10002" text="" arrayStyleStart="" arrayStyleFinish="" model_width="4" model_type="0" model_curvedValue="0.1" ></edge>
+			<edge vertex1="4" vertex2="3" isDirect="false" weight="1" useWeight="true" id="10003" text="" arrayStyleStart="" arrayStyleFinish="" model_width="4" model_type="0" model_curvedValue="0.1" ></edge><edge vertex1="3" vertex2="1" isDirect="false" weight="2" useWeight="true" id="10004" text="" arrayStyleStart="" arrayStyleFinish="" model_width="4" model_type="0" model_curvedValue="0.1" ></edge><edge vertex1="1" vertex2="0" isDirect="false" weight="0.5" useWeight="true" id="10005" text="" arrayStyleStart="" arrayStyleFinish="" model_width="4" model_type="0" model_curvedValue="0.1" ></edge></edges></graph></graphml>

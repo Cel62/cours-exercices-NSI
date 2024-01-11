@@ -1,0 +1,21 @@
+1) a) 5, 4, 3, 2, 1
+   b) la fonction s'appelle elle-même
+
+2) a)
+def ajouter(s, liste):
+  res = []
+  for m in liste:
+    res.append(s + m)
+  return res
+
+b) ba, bb, bc
+
+c) a
+
+3) a) ça va retourner [""]. oui
+
+b)
+début : s = "ab", n = 1
+res = []
+len(s) = 2
+i = 0 : [""]

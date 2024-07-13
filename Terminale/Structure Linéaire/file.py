@@ -17,14 +17,14 @@ class File:
         Permet d'enfiler un élément
         :param element: L'élément à enfiler
         """
-        self.__contenu.append(element)
+        self.__contenu.insert(0, element)
     
     def defiler(self):
         """
         Permet de défiler le sommet
         """
         if not self.file_vide():
-            return self.__contenu.pop(0)
+            return self.__contenu.pop(-1)
         return "Problème avec la méthode defiler"
     
     def premier(self):
@@ -34,7 +34,7 @@ class File:
         :rtype: str
         """
         if not self.file_vide():
-            return self.__contenu[0]
+            return self.__contenu[-1]
         return "Vous ne pouvez pas récupérer le premier de cette file."
 
     def taille(self):
@@ -47,10 +47,8 @@ class File:
     
     def showContenu(self):
         """
-        Permet de retourner le contenu de la file
-        :return: Renvoie le contenu de la file
-        :rtype: list
+        Permet d'afficher le contenu de la file
         """
-        return self.__contenu
+        print(self.__contenu)
 
 doctest.testmod(verbose=False)

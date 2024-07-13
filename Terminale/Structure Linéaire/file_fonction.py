@@ -7,15 +7,15 @@ def file_vide(file):
     return file == []
 
 def enfiler(element, file):
-    file.append(element)
+    file.insert(0, element)
     
 def defiler(file):
     if not file_vide(file):
-        file.pop(file[0])
+        file.remove(file[-1])
     
 def premier(file):
     if not file_vide(file):
-        return file[0]
+        return file[-1]
 
 def taille(file):
     return len(file)

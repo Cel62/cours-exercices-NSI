@@ -1,11 +1,22 @@
 import sqlite3
-fichiersDonnees = "categories-socio-nord.db"
-connection = sqlite3.connect(fichiersDonnees)
-
+connection = sqlite3.connect("categories-socio-nord.db")
 cur = connection.cursor()
 
-cur.execute("SELECT AVG(effectif) AS total FROM evolution WHERE genre='Femmes'")
-nb_femmes_nord = cur.fetchone()
-print(nb_femmes_nord)
+# cur.execute("SELECT evolution.code, correspondance.CodePostal, correspondance.Commune, evolution.categorie, evolution.genre, evolution.effectif FROM evolution INNER JOIN correspondance ON evolution.code = correspondance.CodeINSEE WHERE correspondance.COMMUNE = ?", ("VILLENEUVE-D'ASCQ",))
+# 
+# personnes = cur.fetchall()
+# for p in personnes:
+#     print(p)
+    
+def code_postal_where(cp):
+    cur.execute("SELECT evolution.code, correspondance.CodePostal, correspondance.Commune, evolution.categorie, evolution.genre, evolution.effectif FROM evolution INNER JOIN correspondance ON evolution.code = correspondance.CodeINSEE WHERE correspondance.CodePostal = ?", (cp,))
+    return cur.fetchall()
 
-connection.close()
+def code_postal(cp):
+    cur.execute("SELECT evolution.code, correspondance.CodePostal, correspondance.Commune, evolution.categorie, evolution.genre, evolution.effectif FROM evolution INNER JOIN correspondance ON evolution.code = correspondance.CodeINSEE")
+    resultat = cur.fetchall()
+    resultat_final = []
+    for r in resultat:
+        if r[0] == cp:
+            resultat_final.append(r)
+    return resultat_final

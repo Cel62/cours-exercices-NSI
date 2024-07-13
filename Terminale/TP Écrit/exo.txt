@@ -1,0 +1,58 @@
+1) a) A - B - E
+
+      B - G - D - F
+      B - E - H - F
+      B - A - D - F
+      B - E - H - F
+      B - G - H - F
+
+b)
+Tableau de routage du routeur E
+
+A B 2
+B B 1
+C H 2
+D G 2
+F H 2
+G G 1
+H H 1
+
+Tableau de routage du routeur G
+
+A D 1
+B B 1
+C H 1
+D D 1
+E E 1
+F D 2
+H H 1
+
+2)
+coût = 10^8/débit
+
+a)
+
+Tableau de routage du routeur F
+
+10 Gbit = 10^8/10^10 = 0,01
+1 Gbit = 10^8/10^9 = 0,1
+100 Mbit = 10^8/10^8 = 1
+10 Mbit = 10^8/10^7 = 10
+1 Mbit = 10^8/10^6 = 100
+
+A D 1,1
+B H 10,11
+C D 1,1
+D D 0,1
+E H 10,1
+G D 1,1
+H H 0,1
+
+b) E - G - D
+
+
+Sujet 7)
+
+1) Comme chaque routeur est connectée à au moins 2 autres routeurs, il y aura forcément une liaison avec un autre routeur
+
+2) 
